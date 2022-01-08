@@ -197,8 +197,8 @@ for index in range(numberOfAgents):
     add_agent(pokemons[index].src)
 
 client.start()
-
-lastTime = time.time()
+ttl_global = client.time_to_end()
+prev = float(ttl_global)
 
 agent_to_agent_obj = {}
 pokemon_to_pokemon_obj = {}
@@ -366,6 +366,7 @@ while client.is_running() == 'true':
                     agent_obj.is_catching = None
             print("Time to end: " + ttl, client.get_info())
 
-    time.sleep(0.1)
-    client.move()
-
+    ttl = client.time_to_end()
+    if prev - float(ttl) >= 100:
+        client.move()
+        prev = float(ttl)

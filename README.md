@@ -2,7 +2,13 @@
 
 ![download](https://user-images.githubusercontent.com/88629415/148658851-6ce21efa-9b6d-4032-bea4-9aef4052ca55.jpg)
 
-
+ ``` 
+ The algorithm idea: we calculate the distance, 
+ the time it takes to get to the Pokémon by dividing the distance by speed of the agent,
+ the sum of the weight of each edge between a certain Pokémon and all of the agents,
+ we sum it all together and deduct that sum from the value of the Pokémon,
+ the agent that has the maximum value for this equation well go after that Pokémon.
+```
 
 
 
@@ -20,7 +26,22 @@
 - #### draw: Call this method to draw the button on the screen.
 - #### is_over(self, pos): Pos is the mouse position or a tuple of (x,y) coordinates.
 ## Client:
-##### connect to server
+- #### start_connection: use with ip='127.0.0.1' , port=6666 to start a new connection to the game server.
+- #### __send_message: send the message.
+- #### get_agents: returns - json str of agents.
+- #### add_agent:  param json_of_node should be in this format: '{"id":0}' (replace 0 with the desired starting node for the agent.) returns 'true' (as str) iff the agent has been added succesfuly
+- #### get_graph: returns the graph as json str.
+- #### get_info:  returns the current game info.
+- #### get_pokemons: returns the current pokemons state as json str.
+- #### is_running: returns 'true' (as str) if the game is still running, else: returns 'false' (also str).
+- #### time_to_end: returns time to end in mili-seconds str.
+- #### start: use start to run the game.
+- #### stop: use stop to end the game and upload results.
+- #### move: activate all valid choose_next_edge calls.
+- #### choose_next_edge: choosing the next destination for a specific agent.
+- #### log_in: enter your id as str to login and upload your score to the web server.
+- #### stop_connection: use it to close the connection.
+
 ## student_code:
 - #### scale: get the scaled data with proportions min_data, max_data relative to min and max screen dimensions.
 - #### my_scale: decorate scale with the correct values.

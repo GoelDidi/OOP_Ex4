@@ -15,8 +15,8 @@
 
 ## Creators
 
- - [Goel Didi](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Michael Agarkov](https://github.com/matiassingers/awesome-readme)
+ - [Goel Didi](https://github.com/GoelDidi)
+ - [Michael Agarkov](https://github.com/Michael-Aga)
 
 
 

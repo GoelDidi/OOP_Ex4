@@ -1,6 +1,6 @@
 # Weighted directed graphs
 
-<img src=![download](https://user-images.githubusercontent.com/88629415/148658851-6ce21efa-9b6d-4032-bea4-9aef4052ca55.jpg)/>
+![download](https://user-images.githubusercontent.com/88629415/148658851-6ce21efa-9b6d-4032-bea4-9aef4052ca55.jpg)
 
 The Pokemon game:
 
